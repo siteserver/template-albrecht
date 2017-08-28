@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{Channel.Title} | {Stl.SiteName}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        NAV_DATA =[{"mlid":"1558","plid":"687","hidden":"0","language":"zh-hans","link_title":"\u9038\u592b\u4e66\u9662","link_path":"\/zh-hans\/college\/shaw\/index","has_children":"0"}]    </script>
+<script src="{Stl.SiteUrl}/js/jquery.min.js"></script>
+<script type="text/javascript" src="{Stl.SiteUrl}/js/menu_min.js"></script>
+<link type="text/css" rel="stylesheet" href="{Stl.SiteUrl}/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="{Stl.SiteUrl}/css/css_S26w7qpNpPD50KMaZPYzlzdTHTzwl1WEmzVwHslBKxM.css" media="all" />
+<link type="text/css" rel="stylesheet" href="{Stl.SiteUrl}/css/css_Wu8npAzy16WmnnnWKxpexfgsAryolGGaX6yO3GWA5bU.css" media="all" />
+<link type="text/css" rel="stylesheet" href="{Stl.SiteUrl}/css/css_Ckld0rpYM-QiW7YRqJe7_JYuBG8yDc_75eh3MJ4ZYF0.css" media="all" />
+<link type="text/css" rel="stylesheet" href="{Stl.SiteUrl}/css/css_PDz7KyCt6Wei-gTfZS2GyFhzKRQ6kFwSM3v7PALW-SY.css" media="all" />
+</head>
+<body class="html not-front not-logged-in no-sidebars page-teaching page-teaching-quality domain-www-cuhk-edu-cn i18n-zh-hans theme-name-cuhk">
+<stl:include file="/include/header.html"></stl:include>
+
+
+
+
+<div class="cuhksz-content-main">
+    <div class="cuhksz-banner cuhksz-teaching-banner cuhksz-banner-padding" style="background-image: url({Channel.ImageUrl});">
+        — {Channel.Title} —
+    </div>
+    <div class="container">
+            <ol id="breadcrumb" class="breadcrumb">
+                                    <li><stl:a topLevel="0">{Channel.top0.Title}</stl:a></li>
+                                                <li class="active"><stl:a class="active">{Channel.Title}</stl:a></li>
+                        </ol>
+    </div>
+
+    <div class="cuhksz-teaching-content">
+                    <div class="container">
+                <div class="cuhksz-teaching-info">
+
+                    <div class="cuhksz-teaching-info-purple">
+                    <stl:contents channelIndex="教学委员会" totalNum="1">
+                        <img src="{Content.ImageUrl}">
+                        <div class="cuhksz-text">
+                            <h4>{Channel.Title}</h4>
+                            <p><stl:content type="Summary" wordNum="200" ellipsis="..."></stl:content></p>
+                            <stl:a>了解更多</stl:a>
+                        </div>
+                    </stl:contents>
+                    </div>
+
+                    <div class="cuhksz-teaching-info-gray">
+                    <stl:contents channelIndex="师资力量" totalNum="1">
+                        <div class="cuhksz-text">
+                            <h4>{Channel.Title}</h4>
+                            <p><stl:content type="Summary" wordNum="102" ellipsis="..."></stl:content></p>
+                            <stl:a>了解更多</stl:a>
+                        </div>
+                        <img src="{Content.ImageUrl}">
+                    </stl:contents>
+                    </div>
+
+                </div>
+
+                <div class="cuhksz-teaching-quality">
+                    <div class="cuhksz-column-title">质素保证</div>
+                    <div class="row">
+                    <stl:contents channelIndex="质素保证" totalNum="2" isTop="false">
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <h4><stl:content type="Title"></stl:content><span>—</span></h4>
+                                <p><stl:content type="Content" isClearTags="true"></stl:content></p>
+                            </div>
+                    </stl:contents>     
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cuhksz-science-field">
+                <div class="cuhksz-column-title">设施资源</div>
+                <ul class="list-unstyled">
+                <stl:contents channelIndex="设施与资源" totalNum="4" isTop="false">
+                        <li>
+                            <stl:a><img
+                                        src="{Content.ImageUrl}">
+                                <div class="cuhksz-text">
+                                    <h3>{Content.Title}</h3>
+                                    <p><span>—</span><stl:content type="Content" isClearTags="true" wordNum="140"></stl:content></p>
+                                </div>
+                            </stl:a>
+                        </li>
+                </stl:contents>
+                </ul>
+            </div>
+
+            <p class="clearfix"></p>
+
+
+            <div class="cuhksz-teaching-course">
+                <div class="container">
+                    <div class="cuhksz-column-title">学术课程<span></span>
+                    </div>
+                    <stl:contents totalNum="1" channelIndex="学术课程" isTop="true">
+                    <p><stl:content type="Content" isClearTags="true" wordNum="200" ellipsis=""></stl:content></p>
+                    <stl:a class="cuhksz-more">了解更多</stl:a>
+                    </stl:contents>
+                    <stl:contents channelIndex="学术课程"  totalNum="2" isTop="false">
+                        <dl>
+                            <dt><span><stl:content type="Title"></stl:content></span>
+                                <img src="{Content.ImageUrl}"></dt>
+                        </dl>             
+                    </stl:contents>
+                                    </div>
+            </div>
+      <stl:contents channelIndex="学能提升研究中心" totalNum="1">
+            <div class="cuhksz-teaching-researchcenter" style="background: url({Channel.ImageUrl}) center top no-repeat;">
+            
+                <div class="cuhksz-mask"></div>
+                <div class="container">
+                    <div class="cuhksz-column-title">{Channel.Title}                        <span></span></div>
+                    <p><stl:content type="Content" isClearTags="true" wordNum="240" ellipsis="..."></stl:content></p>
+                    <stl:a>了解更多</stl:a></div>
+            
+            </div>
+            </stl:contents>
+            </div>
+</div>
+
+
+
+<stl:include file="/include/footer.html"></stl:include>
+
+
+<div id="cuhksz-goback"></div>
+<script type="text/javascript" src="{Stl.SiteUrl}/js/js_gPM6NXOQjN2XM2JWQGfy07nKmcdDFrL289YA7h80ySs.js"></script>
+<script type="text/javascript" src="{Stl.SiteUrl}/js/js_bquzos7Ki3K8lYKAvBHp1NMyOMQKHyLrjD98sWBspVg.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","{Stl.SiteUrl}/js/analytics.js?osli1p","ga");ga("create", "UA-48724937-10", {"cookieDomain":".cuhk.edu.cn"});ga("require", "linkid", "linkid.js");ga("set", "anonymizeIp", true);ga("set", "page", location.pathname + location.search + location.hash);ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="{Stl.SiteUrl}/js/js_n43V15XtpRifZwRrhZe09_4ENcwLd39qwiyaT5vJDgs.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"zh-hans\/","ajaxPageState":{"theme":"cuhk","theme_token":"M6ua6KzMhi1BVZKq5P-UC0y4xJKjx2XqxNdju8aQdjw","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"public:\/\/languages\/zh-hans_t-8J2WoFVbtSvzCXva5XAaVqFKFa54h8lX4YH1nShrQ.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/cuhk\/js\/university-office.js":1,"sites\/all\/themes\/cuhk\/js\/bootstrap.min.js":1,"sites\/all\/themes\/cuhk\/js\/slide.js":1,"sites\/all\/themes\/cuhk\/js\/search.js":1,"sites\/all\/themes\/cuhk\/js\/drupal-theme.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/domain\/domain_nav\/domain_nav.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/cuhk\/css\/bootstrap.css":1,"sites\/all\/themes\/cuhk\/css\/base.css":1,"sites\/all\/themes\/cuhk\/css-zh-hans\/other.css":1,"sites\/all\/themes\/cuhk\/css\/drupal-all-site-adp.css":1,"sites\/all\/themes\/cuhk\/css\/drupal-theme.css":1}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackDomainMode":"1","trackUrlFragments":1}});
+//--><!]]>
+</script>
+</body>
+</html>
+

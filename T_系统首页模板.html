@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-hans" class="js">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>首页 | {Stl.SiteName}</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <script type="text/javascript">
+        NAV_DATA =[{"mlid":"1558","plid":"687","hidden":"0","language":"zh-hans","link_title":"\u9038\u592b\u4e66\u9662","link_path":"\/zh-hans\/college\/shaw\/index","has_children":"0"}]    </script>
+
+<script src="{Stl.SiteUrl}/js/jquery.min.js"></script>
+<script type="text/javascript" src="{Stl.SiteUrl}/js/menu_min.js"></script>
+
+<script type="text/javascript" async="" src="{Stl.SiteUrl}/js/linkid.js"></script>
+<script async="" src="{Stl.SiteUrl}/js/analytics.js"></script>
+<link type="text/css" rel="stylesheet" href="{Stl.SiteUrl}/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all">
+<link type="text/css" rel="stylesheet" href="{Stl.SiteUrl}/css/css_S26w7qpNpPD50KMaZPYzlzdTHTzwl1WEmzVwHslBKxM.css" media="all">
+<link type="text/css" rel="stylesheet" href="{Stl.SiteUrl}/css/css_Wu8npAzy16WmnnnWKxpexfgsAryolGGaX6yO3GWA5bU.css" media="all">
+<link type="text/css" rel="stylesheet" href="{Stl.SiteUrl}/css/css_Ckld0rpYM-QiW7YRqJe7_JYuBG8yDc_75eh3MJ4ZYF0.css" media="all">
+<link type="text/css" rel="stylesheet" href="{Stl.SiteUrl}/css/css_j-pnJm-eF4DolmmDvEEo2mF5qiLwrr3UhqCpHae_q1w.css" media="all">
+</head>
+<body class="html front not-logged-in no-sidebars page-index domain-www-cuhk-edu-cn i18n-zh-hans theme-name-cuhk">
+<stl:include file="/include/header.html"></stl:include>
+<div class="cuhksz-content-main">
+  <div class="cuhksz-banner">
+    <div class="container-fluid">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> 
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+        <stl:contents channelIndex="新闻" totalNum="5" isRecommend="true">
+            <stl:if type="ItemIndex" operate="Equals" value="1">
+                <stl:yes>
+                  <li data-slide-to="{Content.ItemIndex-1}" class="active"></li>
+                </stl:yes>
+                <stl:no>
+                  <li data-slide-to="{Content.ItemIndex}" class=""></li>
+                </stl:no>
+            </stl:if>
+        </stl:contents>
+        </ol>
+        
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+        <stl:contents channelIndex="新闻" totalNum="5" isRecommend="true">
+        <stl:if type="ItemIndex" operate="Equals" value="1">
+            <stl:yes>
+              <div class="item active"> <stl:a> <img src="{Content.ImageUrl}" alt="{Content.Title}"> </stl:a> </div>
+            </stl:yes>
+            <stl:no>
+              <div class="item"> <stl:a> <img src="{Content.ImageUrl}" alt="{Content.Title}"> </stl:a> </div>
+            </stl:no>
+        </stl:if>
+        </stl:contents>
+          <!-- Controls --> 
+          <a class="left carousel-control hidden-xs hidden-sm" href="{Stl.SiteUrl}/zh-hans#carousel-example-generic" role="button" data-slide="prev"> </a> <a class="right carousel-control hidden-xs hidden-sm" href="{Stl.SiteUrl}/zh-hans#carousel-example-generic" role="button" data-slide="next"> </a> </div>
+      </div>
+    </div>
+    <div class="cuhksz-massage-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-5 col-sx-10">
+            <div class="cuhksz-news">
+              <div class="cuhksz-column-title"><a href="{Channel.NavigationUrl_新闻}" target="_blank">新闻速递</a></div>
+              <div class="cuhksz-column-body">
+                
+                <div class="cuhksz-pic-text"> 
+                <stl:contents channelIndex="新闻速递" scope="SelfAndChildren" totalNum="1" isRecommend="false" isTop="true" order="AddDate">
+                <stl:a target="_blank"> <img src="{Content.ImageUrl}">
+                  <div class="cuhksz-mask"></div>
+                  <div class="cuhksz-text"> <span>{Channel.Title}</span>
+                    <p>{Content.Title}</p>
+                  </div>
+                  </stl:a> 
+                </stl:contents>
+                  </div>
+                  
+                <ul class="list-unstyled">
+                <stl:contents channelIndex="新闻速递" scope="SelfAndChildren" totalNum="3" isRecommend="false" isTop="false" order="AddDate">
+                  <li><stl:a target="_blank">{Content.Title}</stl:a></li>
+                </stl:contents>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-5 col-sx-10">
+            <div class="cuhksz-news cuhksz-video">
+              <div class="cuhksz-column-title"><a href="{Channel.NavigationUrl_光影校园}" target="_blank">光影校园</a></div>
+              <div class="cuhksz-column-body">
+                <div class="cuhksz-pic-text"> 
+                <stl:contents channelIndex="光影校园" scope="SelfAndChildren" totalNum="1" isRecommend="false" isTop="true" order="AddDate">
+                <stl:a target="_blank"> <img src="{Content.ImageUrl}">
+                  <div class="cuhksz-mask"></div>
+                  <div class="cuhksz-text"> <span>{Channel.Title}</span>
+                    <p>{Content.Title}</p>
+                  </div>
+                  </stl:a> 
+                </stl:contents>
+                </div>
+                <ul class="list-unstyled">
+                 <stl:contents channelIndex="光影校园" scope="SelfAndChildren" totalNum="3" isRecommend="false" isTop="false" order="AddDate">
+                  <li><stl:a target="_blank">{Content.Title}</stl:a></li>
+                </stl:contents>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-5 col-sx-10">
+            <div class="cuhksz-news cuhksz-activities">
+              <div class="cuhksz-column-title"><a href="{Channel.NavigationUrl_活动}" target="_blank">活动预告</a></div>
+              <div class="cuhksz-column-body">
+                <ul class="list-unstyled">
+                <stl:contents channelIndex="活动" totalNum="5" order="AddDate">
+                  <li> <stl:a target="_blank"><stl:content type="Title" wordNum="18" ellipsis=""></stl:content></stl:a> <em><stl:content type="AddDate" formatString="yyyy.MM.dd"></stl:content></em><span></span> </li>
+                </stl:contents>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-5 col-sx-10">
+            <div class="cuhksz-news cuhksz-activities">
+              <div class="cuhksz-column-title"><a href="{Channel.NavigationUrl_公告}" target="_blank">公告</a></div>
+              <div class="cuhksz-column-body">
+                <ul class="list-unstyled">
+                <stl:contents channelIndex="公告" totalNum="5" order="AddDate">
+                  <li> <stl:a target="_blank"><stl:content type="Title" wordNum="18" ellipsis=""></stl:content></stl:a> <em><stl:content type="AddDate" formatString="yyyy.MM.dd"></stl:content></em><span></span> </li>
+                </stl:contents>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p class="clearfix"></p>
+        </div>
+        <div class="cuhksz-more-container hidden-xs">
+          <div class="cuhksz-line"></div>
+          <a href="{Channel.NavigationUrl_新闻}" class="cuhksz-more hidden-xs" target="_blank">探索更多</a> </div>
+      </div>
+    </div>
+    <div class="cuhksz-campus-life">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+            <div class="cuhksz-column-info">
+              <h2>精勤求学<span></span></h2>
+              <p><stl:channel channelIndex="精勤求学" type="Content" isClearTags="true"></stl:channel></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <ul>
+          <stl:channels channelIndex="精勤求学">
+              <li class="cuhksz-campus-life-pic{Channel.ItemIndex}"><img src="{Channel.ImageUrl}" class="hidden-xs">
+                <div class="cuhksz-text">
+                  <h3>{Channel.Title} <small>—<em>{Channel.Content}</em></small> <stl:a target="_blank">探索更多</stl:a></h3>
+                </div>
+              </li>
+          </stl:channels>
+        </ul>
+      </div>
+    </div>
+    <div class="cuhksz-research-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+            <div class="cuhksz-column-info">
+              <h2>研究与探索<span></span></h2>
+              <p><stl:channel channelIndex="研究与探索" type="Content" isClearTags="true"></stl:channel></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+        <stl:channels channelName="研究与探索">
+          <div class="col-md-4 col-sm-5 col-xs-12">
+            <div class="cuhksz-text"> <stl:a target="_blank">
+              <div class="cuhksz-pic"><img src="{Channel.ImageUrl}">
+                <div class="cuhksz-mask"></div>
+              </div>
+              <span>{Channel.Title}</span>
+              <p>{Channel.Content}</p>
+              </stl:a> </div>
+          </div>
+          
+        </stl:channels>
+        </div>
+      </div>
+    </div>
+    <div class="cuhksz-university-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+            <div class="cuhksz-column-info">
+              <h2>我们的特色<span></span></h2>
+              <p><stl:channel channelIndex="我们的特色" type="Content" isClearTags="true"></stl:channel></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+        <stl:contents channelIndex="我们的特色" totalNum="2">
+          <div class="col-md-6 col-sm-10">
+            <div class="cuhksz-university-features-column">
+              <div class="cuhksz-pic"><img src="{Content.ImageUrl}"></div>
+              <div class="cuhksz-text"> <em></em> <span><stl:content type="Title" wordNum="20" ellipsis=""></stl:content></span> <i><stl:content type="SubTitle" wordNum="20" ellipsis=""></stl:content></i>
+                <p><stl:content type="Summary" wordNum="50" ellipsis=""></stl:content></p>
+              </div>
+            </div>
+          </div>
+        </stl:contents>
+        </div>
+      </div>
+    </div>
+  </div>
+  <stl:include file="/include/footer.html"></stl:include>
+  <div id="cuhksz-goback" style="display: block;"></div>
+  <script type="text/javascript" src="{Stl.SiteUrl}/js/js_gPM6NXOQjN2XM2JWQGfy07nKmcdDFrL289YA7h80ySs.js"></script> 
+  <script type="text/javascript" src="{Stl.SiteUrl}/js/js_bquzos7Ki3K8lYKAvBHp1NMyOMQKHyLrjD98sWBspVg.js"></script> 
+  <script type="text/javascript">
+
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","{Stl.SiteUrl}/js/analytics.js?os08u8","ga");ga("create", "UA-48724937-10", {"cookieDomain":".cuhk.edu.cn"});ga("require", "linkid", "linkid.js");ga("set", "anonymizeIp", true);ga("set", "page", location.pathname + location.search + location.hash);ga("send", "pageview");
+//--><!]]>
+</script> 
+  <!--<script type="text/javascript" src="{Stl.SiteUrl}/js/js_Q3ub81vJ1h7NjEKlddrS2JlQ58wgnKTGPi8LpVKK9Ls.js"></script>--> 
+  <script type="text/javascript" src="{Stl.SiteUrl}/js/js_n43V15XtpRifZwRrhZe09_4ENcwLd39qwiyaT5vJDgs.js"></script> 
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"zh-hans\/","ajaxPageState":{"theme":"cuhk","theme_token":"LhRuVf6Jpu3ARbv5S9FHvdYVFVApqME4WIEbIXCGJ_E","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"public:\/\/languages\/zh-hans_t-8J2WoFVbtSvzCXva5XAaVqFKFa54h8lX4YH1nShrQ.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/cuhk\/js\/university-office.js":1,"sites\/all\/themes\/cuhk\/js\/bootstrap.min.js":1,"sites\/all\/themes\/cuhk\/js\/slide.js":1,"sites\/all\/themes\/cuhk\/js\/search.js":1,"sites\/all\/themes\/cuhk\/js\/drupal-theme.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/domain\/domain_nav\/domain_nav.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/cuhk\/css\/bootstrap.css":1,"sites\/all\/themes\/cuhk\/css\/base.css":1,"sites\/all\/themes\/cuhk\/css-zh-hans\/index.css":1,"sites\/all\/themes\/cuhk\/css\/drupal-all-site-adp.css":1,"sites\/all\/themes\/cuhk\/css\/drupal-theme.css":1}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackDomainMode":"1","trackUrlFragments":1}});
+//--><!]]>
+</script> 
+</div>
+</body>
+</html>

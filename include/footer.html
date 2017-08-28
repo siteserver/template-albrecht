@@ -1,0 +1,72 @@
+<footer class="cuhksz-footer">
+    <div class="container">
+      <ul class="cuhksz-footer-link hidden-lg hidden-md">
+        <li>电话：(86) 711 8227 3333</li>
+        <li>邮箱：cpr@siteserver.cn</li>
+        <li>传真：(86) 711 8228 4444</li>
+      </ul>
+      <div class="cuhksz-footer-menu">
+        <dl class="cuhksz-footer-menu-width-25per">
+          <dt><a href="javascript:;">快速联系</a>_</dt>
+          <dd>
+            <ul>
+              <li>电话：(86) 711 8338 5555</li>
+              <li>邮箱：cpr@cuhk.edu.cn</li>
+              <li>传真：(86) 755 8427 3654</li>
+              <li>地址：陕西省西安市咸宁西路28号</li>
+              <li><a href="javascript:;">邮编：518172</a></li>
+              <li><a href="mailto:admin@siteserver.cn">校长信箱</a></li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="cuhksz-footer-menu-width-15per">
+          <dt><a href="javascript:;">关于我们</a>_</dt>
+          <dd>
+            <ul>
+            <stl:channels totalNum="7" channelIndex="关于我们">
+              <li><stl:a><stl:channel type="Title" wordNum="8" ellipsis=""></stl:channel></stl:a></li>
+            </stl:channels>
+            </ul>
+          </dd>
+        </dl>
+        <dl>
+          <dt><a href="javascript:;">新闻媒体</a>_</dt>
+          <dd>
+            <ul>
+             <stl:channels totalNum="7" channelIndex="新闻速递">
+              <li><stl:a><stl:channel type="Title" wordNum="8" ellipsis=""></stl:channel></stl:a></li>
+            </stl:channels>
+            </ul>
+          </dd>
+        </dl>
+        <dl>
+          <dt><a href="javascript:;">探索更多</a>_</dt>
+          <dd>
+            <ul>
+              <stl:contents totalNum="7" channelIndex="友情链接">
+              <li><stl:a><stl:content type="Title" wordNum="8" ellipsis=""></stl:content></stl:a></li>
+            </stl:contents>
+            </ul>
+          </dd>
+        </dl>
+        <div class="cuhksz-footer-logo hidden-xs hidden-sm"><a href="javascript:;">{stl:value type=weixin}</a> </div>
+      </div>
+      <ul class="cuhksz-footer-social-media">
+        <li class="cuhksz-facebook"><a href="javascript:;">Facebook</a></li>
+        <li class="cuhksz-twitter"><a href="javascript:;">Twitter</a></li>
+        <li class="cuhksz-weibo"><a href="javascript:;">weibo</a></li>
+        <li class="cuhksz-weixin"><a href="javascript:;">Weixin</a></li>
+      </ul>
+      <ul class="cuhksz-footer-copyright">
+        <li><a href="javascript:;">私隐政策</a></li>
+        <li><a href="javascript:;">免责声明</a></li>
+        <li><a href="javascript:;">版权所有 © 2003-2017</a></li>
+      </ul>
+    </div>
+  </footer>
+<script type="text/javascript">
+$(document).ready(function (){
+  $(".menu ul li").menu();
+  $(".cuhksz-council-botton").click(function(){var t=$(".cuhksz-council-botton").height(),c=$(this).next().height(),n=c+t+100;console.log(c),console.log(n),$(this).parent().css("height",n),$(this).parent().siblings().css("height","auto")}),$(".cuhkz-clocs").click(function(){$(this).parent().parent().parent().css("height","auto")})
+}); 
+</script>

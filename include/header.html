@@ -1,0 +1,99 @@
+<header class="cuhksz-header">
+  <div class="cuhksz-header-mask"></div>
+  <div class="container">
+    <div class="cuhksz-logo"><a href="{stl.siteurl}/index.html">{stl:value type=Logo}</a></div>
+    <nav id="cuhksz-cuhksz-topmenu" class="hidden-xs hidden-sm">
+      
+      <stl:channels channelIndex="辅助栏目">
+      <stl:if type="ItemIndex" operate="Equals" value="1">
+          <stl:yes>
+            <stl:a style="color: #726f73;"></stl:a>
+          </stl:yes>
+          <stl:no>
+            &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<stl:a style="color: #726f73;"></stl:a>
+          </stl:no>
+      </stl:if>
+      </stl:channels>
+      
+    </nav>
+    <div class="cuhksz-menugroup">
+      <div class="cuhksz-menuitem">
+        <dl class="cuhksz-fastmenu visible-xs-block visible-sm-block">
+          <dt> <a> 快速链接 </a> </dt>
+          <dd>
+            <ul>
+              <li> <a href="http://developer.siteserver.cn/"> 图书馆 </a> </li>
+              <li class="visible-xs-block"> <a href="https://github.com/siteserver/cms/" class="en"> English</a> </li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="cuhksz-iammenu">
+          <dt class=""> <a href="{Channel.NavigationUrl_我是}"> 我是 </a> </dt>
+          <dd style="display: none;">
+            <ul>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      
+      <div class="cuhksz-othermenu hidden-xs hidden-sm">
+      <stl:channels topLevel="0" groupChannel="nav">
+      <stl:if type="channelName" operate="Equals" value="入学申请">
+      	<stl:yes>
+            <dl>
+              <dt class="cuhksz-nobgarrw"> <stl:a></stl:a> </dt>
+            </dl>
+        </stl:yes>
+        <stl:no>
+        	<dl>
+              <dt class=""> <stl:a></stl:a> </dt>
+              <dd style="display: none;">
+                <ul>
+                <stl:channels groupChannelNot="not">
+                  <li> <stl:a></stl:a> </li>
+                </stl:channels>
+                </ul>
+          	  </dd>
+        </dl>
+        </stl:no>
+        </stl:if>
+      </stl:channels>
+      </div>
+      
+      <div class="cuhksz-iconmenu">
+        <ul>
+          <li class="cuhksz-iconmenu-search"><a id="cuhksz-iconmenu-search" href="{stl.siteurl}/utils/search.html?word="></a></li>
+          <li class="cuhksz-iconmenu-menu"><a id="cuhksz-iconmenu-nav" href="javascript:void(0)"></a></li>
+        </ul>
+        <ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="cuhksz-nav-right">
+    <div id="cuhksz-nav-right-mask"></div>
+    <div id="cuhksz-nav-right-object">
+      <div class="cuhksz-nav-right-title"> 菜单总览 <i class="cuhksz-nav-right-close"></i></div>
+        <div class="menu">
+        		<ul class="cuhksz-nav-right-list">
+        <stl:channels topLevel="0" groupChannel="nav">
+            <stl:if type="ChannelName" operate="Equals" value="入学申请">
+                <stl:yes>
+                    <li><stl:a></stl:a></li>
+                </stl:yes>
+                <stl:no>
+                    <li><a href="javascript:;" class="active">{Channel.Title}</a>
+                        <ul class="cuhksz-nav-right-list-info" style="display:none;">
+                        	<stl:channels groupChannelNot="not">
+                            	<li><stl:a></stl:a></li>
+                            </stl:channels>
+                        </ul>
+                    </li>
+                </stl:no>
+            </stl:if>
+        </stl:channels>
+        </ul>
+        </div>
+    </div>
+  </div>
+</header>
